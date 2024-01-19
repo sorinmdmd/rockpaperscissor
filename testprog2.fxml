@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="364.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e21ff" height="375.0" layoutX="468.0" layoutY="-7.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="200.0" />
+      <Button fx:id="button1" layoutX="14.0" layoutY="104.0" mnemonicParsing="false" onAction="#rock" prefHeight="81.0" prefWidth="129.0" text="Rock">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="Text1" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" prefHeight="81.0" prefWidth="405.0" text="Rock Paper Scissors" textAlignment="CENTER" textFill="#421616">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="button11" layoutX="148.0" layoutY="104.0" mnemonicParsing="false" onAction="#paper" prefHeight="81.0" prefWidth="129.0" text="Paper">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="button111" layoutX="287.0" layoutY="104.0" mnemonicParsing="false" onAction="#scissors" prefHeight="81.0" prefWidth="129.0" text="Scissors">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="result" alignment="CENTER" layoutX="96.0" layoutY="269.0" onKeyPressed="#scissors" prefHeight="81.0" prefWidth="235.0">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label fx:id="comp_wahl" layoutX="65.0" layoutY="218.0" prefHeight="51.0" prefWidth="297.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imagine" fitHeight="151.0" fitWidth="105.0" layoutY="199.0" onKeyPressed="#paper" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@flasche.jpeg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="165.0" layoutY="73.0" prefHeight="17.0" prefWidth="97.0" text="Deine Wahl">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imagine2" fitHeight="159.0" fitWidth="65.0" layoutX="370.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@veltins-pilsener.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="493.0" layoutY="25.0" prefHeight="23.0" prefWidth="138.0" text="Leaderbord" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="484.0" layoutY="65.0" text="Computer" textFill="WHITE" />
+      <Label fx:id="namepl" layoutX="504.0" layoutY="104.0" text="Du" textFill="WHITE" />
+      <Label fx:id="scorcomp" layoutX="580.0" layoutY="65.0" text="0" textFill="WHITE" />
+      <Label fx:id="scorpl" layoutX="580.0" layoutY="104.0" prefWidth="30.0" text="0" textFill="WHITE" />
+      <Line endX="-100.0" endY="363.0" layoutX="567.0" layoutY="1.0" startX="-100.0" />
+      <Button layoutX="544.0" layoutY="305.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+   </children>
+</AnchorPane>
